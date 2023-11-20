@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de contrasenyas</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Generador de contrasenyas</h1>
+        <div class="output">
+            <input type="text" id="password" readonly placeholder="Password Generator">
+            <button id="copy"><img src="copy-icon.svg" alt="Copy Icon"></button>
+            <p id="tooltip">La contrasenya se copio correctamente</p>
+        </div>
+        <div class="length">
+            <label for="length">
+                <p>Password length</p>
+                <span id="lengthvalues">12</span>
+            </label>
+            <input type="range" id="length" min="1" max="24" value="12" />
+        </div>
+        <div class="options">
+            <label>
+                Minusculas (a-z)
+                <input type="checkbox" id="minusculas" checked />
+            </label>
+            <label>
+                Mayusculas (A-Z)
+                <input type="checkbox" id="mayusculas" checked />
+            </label>
+            <label>
+                Numeros (0-9)
+                <input type="checkbox" id="numeros" checked />
+            </label>
+            <label>
+                Caracteres especiales
+                <input type="checkbox" id="caracespeciales" checked />
+            </label>
+        </div>
+        <div class="button">
+            <button id="generate">Generar</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
